@@ -1,0 +1,440 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap');
+html{
+	scroll-behavior: smooth;
+}
+body {
+	margin: 0;
+	min-width: 320px;
+}
+
+body.dark{
+background-color: #1A1919;
+}
+.nav-links{
+	margin-right:79px;
+	display: flex;
+}
+.nav-links li{
+	margin-top: 18px;
+	margin-left: 40px;
+	display: flex;
+}
+img {
+	width: 100%;
+	height: auto;
+}
+nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 67px;
+	width: 100%;
+	z-index: 100;
+	background-color: #1A1919;
+}
+.navigation{
+	position: relative;
+	height: 100%;
+	max-width: 1000px;
+	width: 100%;
+	margin: 0 auto;
+	padding top: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+	
+.siderbarClose{
+	color: white;
+	font-size: 24px;
+	margin-top: -5px;
+	margin-right: 10px;
+	cursor: pointer;
+
+}
+
+nav li{
+	list-style: none;
+}
+.nav-links li a{
+	position: relative;
+    font-size: 17px;
+    font-weight: 500;	
+    text-decoration: none;
+    font-family: Lato;
+    color: white;
+
+}
+.nav-links li a::after{
+  content: '';
+  display: block;
+  width: 100%;
+  background-color: #ccc;
+  height: 1px;
+  transform: scale(0);
+  transition: all .3s;
+}
+.nav-links li:hover a::after{
+  transform: scale(1);
+}
+.navigation .darkLight-searchBox{
+	display: flex;
+	align-items: center;
+
+}
+.darkLight-searchBox .dark-light,
+.darkLight-searchBox .searchToggle{
+	height: 40px;
+	width: 40px;
+	display: flex;
+	align-items: center;
+    justify-content:center;
+    margin: 0 5px;
+}
+.dark-light i, .searchToggle i{
+	font-size: 22px;
+	cursor: pointer;
+	position: absolute;
+	color: white;
+	transition: all 0.3s ease;
+}
+.dark-light i.sun{
+	opacity: 0;
+	pointer-events: none;
+}
+.dark-light.active i.sun{
+	opacity: 1;
+	pointer-events: auto;
+
+}
+.dark-light.active i.moon{
+	opacity: 0;
+	pointer-events: none;
+}
+.searchToggle i.cancel{
+	opacity: 0;
+	pointer-events: none;
+}
+.searchToggle.active i.cancel{
+	opacity: 1;
+	pointer-events: auto;
+}
+.searchToggle.active i.search{
+	opacity: 0;
+	pointer-events: none;
+}
+
+.logo{
+	width: 55px;
+	height: 55px;
+	margin-top: 5px;
+}
+.menu .logo-toggle{
+	display: none;
+}
+	
+.searchBox{
+	position: relative;
+}
+nav .navigation .sidebarOpen{
+	color: white;
+	font-size: 24px;
+	padding: 5px;
+	cursor: pointer;
+	display: none;
+}
+
+
+@media (max-width: 790px){
+	nav .navigation .sidebarOpen{
+	display: block;
+}
+  
+.menu{
+	position:fixed;
+	height: 100%;
+	width: 265px;
+	left: -100%;
+	top: 0;
+	background-color: #1A1919;
+	transition: all 0.4s ease;
+	z-index: 100;
+
+}
+nav.active .menu{
+	left:0;
+}
+nav.active .logo{
+	display: none;
+	transition: all 0.3s ease;
+}
+
+nav .menu .logo-toggle{	
+	display: block;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.logo-t{
+	margin-top: 10px;
+	margin-left: 10px;
+	width: 60px;
+	height: 60px;
+}
+.navigation .nav-links{
+	flex-direction: column;
+	padding-top: 40px;
+	padding-right:25px;
+	align-items: center;
+
+}
+.nav-links li a{
+	display: block;
+	margin-top:30px;
+
+	}
+	.logo{
+		margin-left: 30px;
+	}
+}
+	
+/*new intro*/
+.intro {
+	height: 145vh;
+	background: url(../img/clothes.jpg) no-repeat center;
+	background-size: cover;
+	padding-top: 263px;
+	margin-bottom: 120px;
+}
+body.dark .intro{
+	height: 135vh;
+	background: url(../img/man.jpg) no-repeat center;
+    background-size: cover;
+}
+.wrapper {
+	max-width: 1060px;
+	margin: 0 auto;
+
+	/*блок для логотипа и кнопок*/
+}
+.intro_title{
+	font-family: Lato;
+	max-width: 600px;
+	font-weight: 500;
+	font-size: 50px;
+	line-height: 60px;
+	color: white;
+	margin-bottom: 30px;
+}
+.intro_subtitle{
+	color:white;
+	max-width: 400px;
+	font-size: 20px;
+	margin-bottom: 50px;
+}
+.search-form_info{
+	display: flex;
+	flex-wrap: wrap;
+}
+.search-form_field{
+	width: 320px;
+	background-color: transparent;
+	background: url(../img/Oval.png) no-repeat left top;
+	background-size: 20px;
+	border:0;
+	border-bottom: 2px solid white;
+	margin-right: 60px;
+	padding-left: 43px;
+	padding-bottom: 18px;
+	font-size: 18px;
+	font-weight: 480;
+	color: white;
+}
+.search-form_field::placeholder{
+	font-size: 18px;
+	font-weight: 480;
+	color: white;
+}
+.btn-light{
+	font-family: Lato;
+	font-size: 18px;
+	font-weight: 480;
+	padding: 10px 45px;
+	text-align: center;
+	text-transform: uppercase;
+	background: #C29E72;
+	border: 0;
+	border-radius: 12px
+}
+.benefits{
+	margin-bottom: 50px;
+}
+[class*="col-"] {
+	margin-top: 200px;
+	margin-left: 38px;
+
+  }
+  main .row{
+	background-color: #fff;
+	box-shadow: 0px 2px 20px rgba(21,24,36,0.15991);
+	position: relative;
+	margin-bottom: 100px;
+	border-radius: 20px;
+
+  }
+
+.benefit_card-pic{
+	margin-top: 30px;
+	margin-bottom: 37px;
+	margin-right: 70px;
+}
+
+
+.benefit_card-title{
+	margin-top: 30px;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 24px;
+	margin-bottom: 26px;
+} 
+.benefit_card-desc{
+	font-size: 16px;
+	line-height: 24px;
+	margin-bottom: 39px;
+}
+.fa-hand-sparkles{
+ 	font-size: 100px;
+    margin-left: 50px;
+}
+.fa-heart{
+	font-size: 100px;
+    margin-left: 50px;
+}
+.fa-tshirt{
+	font-size: 100px;
+	margin-left: 58px;
+}
+.carousel-inner{
+	margin-bottom: 50px;
+}
+.btn-primary{
+	color: black;
+	font-family: Lato;
+	font-size: 18px;
+	text-align: center;
+	background: #F5D787;
+	border: 0;
+}
+.footer{
+	background-color: #1A1919;
+	
+	width: 100vw;
+	padding-top: 30px;
+}
+.cantainer{
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.footer p{
+	font-weight: 400;
+	font-size: 16px;
+	color: #fff;
+	font-family: Roboto;
+}
+.footer-logo{
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+.footer-elements{
+	margin: 0 5px;
+	font-size: 23px;
+	   
+}
+.footer-elements:hover{
+	opacity: .50;
+
+}
+.footer a{
+	color: #fff;
+}
+.footer-bottom{
+	padding-top: 55px;
+	text-transform: capitalize;
+}
+@media(max-width:790px){
+	.carousel-item p{
+	     display: none;
+	}
+	.saint{
+		display: none;
+	}
+	.benefits-t{
+		display: none;
+	}
+	.btn-light{
+		display: none;
+	}
+	input{
+		display: none;
+	}
+	
+	form p{
+		display: none;
+	}
+	.intro h1{
+		font-size: 32px;
+		text-align: center;
+		line-height: 45px;
+	}
+	.intro_subtitle{
+		max-width: 350px;
+		font-size: 18px;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+	}
+	.fa-hand-sparkles{
+	     margin-left:79px;
+	}
+	.fa-tshirt{
+		margin-left: 83px;	
+	}
+	.fa-heart{
+		margin-left: 98px;
+	}
+	.benefit_card-title{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+	}
+	.benefit_card-desc{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+	}
+}
+body.dark main .row{
+	background-color: #1C1C1C;
+	color: #BABABA;
+}
+body.dark .slide-title{
+	color: #BABABA;
+}
+body.dark .footer{
+	background-color: #000;
+}
+.jumbotron{
+	background: url(../img/shalkar.jpg);
+	background-size: cover;
+}
+body.dark .jumbotron{
+	background: url(../img/shalkar-dark.jpg);
+}

@@ -1,0 +1,108 @@
+body{
+	background: #121212;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+p, h1, h2{
+color: #fff;
+}
+header{
+	background-color: #1C1C1C;
+	font-family: Arial;
+	font-weight: 550;
+	max-height: 50px;
+}
+header .nav-link{
+	margin-left:20px;
+}
+.dropdown-menu{
+	background-color: #212222;
+	max-width: 40px;
+	font-size: 14px;
+}
+.dropdown-item{
+	color: #fff;
+	margin-top: 5px;
+}
+header .navbar-brand{
+	margin-top: -15px;
+}
+.main_menu-items{
+	padding-left: 120px;
+}
+.main_menu_r{
+	padding-right: 30px;
+    font-weight: 200;
+	font-size: 15px
+}
+.btn-light{
+	background-color: transparent;
+	color: #fff;
+	padding:4px 8px;
+	font-size: 15px;
+	text-align: center;
+}
+.popular__list{
+	
+	display: flex;
+}
+.card{
+	max-width: 8em;
+	background-color: #1C1C1C;
+	border-radius: 10px;
+	margin-left: 10px;
+}
+.card-text{
+	font-size: 14px;
+	color: #fff;
+}
+.above__list{
+	background-color: #1C1C1C;
+	width: 840px;
+	margin-left: 225px;
+	margin-top: 20px;
+	border-radius: 10px;
+}
+.ranobe__up{
+	color: white;
+	margin-left: 12px;
+	padding-top: 6px;
+	font-weight: 450;
+	font-size: 18px;
+	letter-spacing: 0.02em;
+}
+.right_block{
+	margin-top: -375px;
+    margin-left: 1100px;
+    background-color: #1C1C1C;
+    max-width: 280px;
+}
+.right_block_header{
+	font-weight: 450;
+	font-size: 16px;
+    padding-top: 5px;
+	margin-left: 14px;
+}
+.line{
+	background-color: #63AFE5;
+	height: 1px;
+	margin-top: -8px;
+}
+.zadrot_line{
+	width: 18%;
+	margin-left: 14px;
+	margin-top: -5px;
+	display: block;
+	
+}
+.zadrot_text{
+	margin-top: -50px;
+	font-weight: 300;
+	margin-right: 155px;
+}
+
+
+

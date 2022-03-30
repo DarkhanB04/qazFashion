@@ -1,0 +1,12 @@
+body{
+	font-family: Lato;
+	font-size: 20px;
+	background:transparent;
+	background: url(../img/bgg.jpg);
+}
+.nav-item a{
+	margin-left: 70px;
+}
+div#block{
+	color:black;
+}
